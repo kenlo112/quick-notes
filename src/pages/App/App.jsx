@@ -4,7 +4,7 @@ import { getUser } from '../../utilities/users-service';
 import './App.css';
 import AuthPage from '../AuthPage/AuthPage';
 import NewNotesPage from '../NewNotesPage/NewNotesPage';
-import NotesHistoryPage from '../ONotesHistoryPage/NotesHistoryPage';
+import NotesHistoryPage from '../NotesHistoryPage/NotesHistoryPage';
 import NavBar from '../../components/NavBar/NavBar';
 
 export default function App() {
