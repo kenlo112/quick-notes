@@ -1,4 +1,4 @@
-import NoteDetail from "../../components/Note/NoteDetail.jsx";
+import NoteDetail from "../../components/NoteDetail/NoteDetail.jsx";
 
 
 export default function AllNotes({ notes, user, setNotes }) {

@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import NoteDetail from "../../components/Note/NoteDetail.jsx";
+import NoteDetail from "../../components/NoteDetail/NoteDetail.jsx";
 import { useState } from "react";
 import * as notesAPI from "../../utilities/notes-api";
 
