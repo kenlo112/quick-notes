@@ -9,6 +9,6 @@ const isUser = require("../../config/ensureLoggedIn");
 router.get("/", notesCtrl.index);
 //POST/notes
 router.post("/new", isUser, notesCtrl.create);
-router.delete("/:id", isUser, notesCtrl.deleteNote);
+
 
 module.exports = router;

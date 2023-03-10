@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import NoteComponent from "../../components/Note/NoteComponent.jsx";
+import NoteDetail from "../../components/Note/NoteDetail.jsx";
 import { useState } from "react";
 import * as notesAPI from "../../utilities/notes-api";
 
@@ -44,7 +44,7 @@ export default function NewNote({ setNotes, notes, user }) {
         ) : (
           <div>
             {notes.map((note, i) => (
-              <NoteComponent
+              <NoteDetail
                 notes={note}
                 key={i}
                 user={user}

@@ -10,6 +10,3 @@ export function getAll() {
   return sendRequest(BASE_URL);
 }
 
-export function deleteNote(_id) {
-  return sendRequest(`${BASE_URL}/${_id}`, "DELETE");
-}

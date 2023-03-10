@@ -1,4 +1,5 @@
-import NoteComponent from "../../components/Note/NoteComponent.jsx";
+import NoteDetail from "../../components/Note/NoteDetail.jsx";
+
 
 export default function AllNotes({ notes, user, setNotes }) {
   return (
@@ -9,7 +10,7 @@ export default function AllNotes({ notes, user, setNotes }) {
       ) : (
         <div>
           {notes.map((note, i) => (
-            <NoteComponent
+            <NoteDetail
               notes={note}
               key={i}
               user={user}
