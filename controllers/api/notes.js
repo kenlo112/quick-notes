@@ -1,7 +1,7 @@
 const Note = require("../../models/note");
 
 module.exports = {
-  create,
+    create,
     index,
     deleteNote,
 };
@@ -25,11 +25,8 @@ async function create(req, res) {
 
 async function deleteNote(req, res) {
     try {
-      // console.log(req.params.id);
       req.body.user = req.user._id;
       const note = await Note.findByIdAndDelete(req.params.id);
-      // console.log(note)
-      //query all notes from db
       const notes = await Note.find({});
       res.status(200).json(notes);
     } catch (err) {

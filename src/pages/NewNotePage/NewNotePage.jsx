@@ -5,7 +5,6 @@ import * as notesAPI from "../../utilities/notes-api";
 
 export default function NewNote({ setNotes, notes, user }) {
   const navigate = useNavigate();
-
   const [error, setError] = useState("");
   const [noteData, setNoteData] = useState({
     content: "",
@@ -18,7 +17,7 @@ export default function NewNote({ setNotes, notes, user }) {
       setNotes([...notes, newNote]);
       navigate("/notes");
     } catch {
-      setError("Log In Failed - Try Again");
+      setError("Try Again");
     }
   }
 
@@ -32,8 +31,6 @@ export default function NewNote({ setNotes, notes, user }) {
         <form onSubmit={handleSubmit}>
           <textarea
             name="content"
-            placeholder="write your note"
-            rows="7"
             value={noteData.name}
             onChange={handleChange}
           ></textarea>
